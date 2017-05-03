@@ -1,0 +1,46 @@
+May-03 15:09:08.521 [main] DEBUG nextflow.cli.Launcher - $> /usr/bin/nextflow run 1493816937600.nf
+May-03 15:09:08.667 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 0.24.1
+May-03 15:09:08.714 [main] INFO  nextflow.cli.CmdRun - Launching `1493816937600.nf` [ecstatic_brahmagupta] - revision: f1bfc3711e
+May-03 15:09:09.313 [main] DEBUG nextflow.Session - Session uuid: a925c7d5-3515-400e-ba10-f930b88ed56d
+May-03 15:09:09.313 [main] DEBUG nextflow.Session - Run name: ecstatic_brahmagupta
+May-03 15:09:09.315 [main] DEBUG nextflow.Session - Executor pool size: 12
+May-03 15:09:09.376 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 0.24.1 build 4245
+  Modified: 24-03-2017 19:41 UTC (20:41 CEST)
+  System: Linux 4.4.0-75-generic
+  Runtime: Groovy 2.4.10 on Java HotSpot(TM) 64-Bit Server VM 1.8.0_121-b13
+  Encoding: UTF-8 (UTF-8)
+  Process: 26790@CUBA [127.0.1.1]
+  CPUs: 12 - Mem: 47.2 GB (41.2 GB) - Swap: 48 GB (48 GB)
+May-03 15:09:09.442 [main] DEBUG nextflow.Session - Work-dir: /home/ksayers/cwlconversion_work/Experimental_WFS/helloworld/work [ext2/ext3]
+May-03 15:09:09.443 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/ksayers/cwlconversion_work/Experimental_WFS/helloworld/bin
+May-03 15:09:09.681 [main] DEBUG nextflow.Session - Session start invoked
+May-03 15:09:09.717 [main] DEBUG nextflow.processor.TaskDispatcher - Dispatcher > start
+May-03 15:09:09.717 [main] DEBUG nextflow.script.ScriptRunner - > Script parsing
+May-03 15:09:09.911 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+May-03 15:09:10.022 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+May-03 15:09:10.023 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'local'
+May-03 15:09:10.029 [main] DEBUG nextflow.executor.Executor - Initializing executor: local
+May-03 15:09:10.031 [main] INFO  nextflow.executor.Executor - [warm up] executor > local
+May-03 15:09:10.046 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=47.2 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+May-03 15:09:10.051 [main] DEBUG nextflow.processor.TaskDispatcher - Starting monitor: LocalPollingMonitor
+May-03 15:09:10.051 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+May-03 15:09:10.053 [main] DEBUG nextflow.executor.Executor - Invoke register for executor: local
+May-03 15:09:10.095 [main] DEBUG nextflow.Session - >>> barrier register (process: hello)
+May-03 15:09:10.107 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > hello -- maxForks: 12
+May-03 15:09:10.130 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+May-03 15:09:10.131 [main] DEBUG nextflow.Session - Session await
+May-03 15:09:10.163 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - <hello> Poison pill arrived
+May-03 15:09:10.167 [Actor Thread 2] DEBUG nextflow.processor.StateObj - <hello> State before poison: StateObj[submitted: 4; completed: 0; poisoned: false ]
+May-03 15:09:10.446 [Actor Thread 4] INFO  nextflow.Session - [b1/3da3f8] Submitted process > hello (2)
+May-03 15:09:10.446 [Actor Thread 5] INFO  nextflow.Session - [8d/810720] Submitted process > hello (3)
+May-03 15:09:10.447 [Actor Thread 3] INFO  nextflow.Session - [4c/aeb5b9] Submitted process > hello (1)
+May-03 15:09:10.448 [Actor Thread 6] INFO  nextflow.Session - [da/254196] Submitted process > hello (4)
+May-03 15:09:10.451 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - <hello> After stop
+May-03 15:09:10.512 [Actor Thread 7] DEBUG nextflow.processor.TaskProcessor - <hello> Sending poison pills and terminating process
+May-03 15:09:10.513 [Actor Thread 7] DEBUG nextflow.Session - <<< barrier arrive (process: hello)
+May-03 15:09:10.514 [main] DEBUG nextflow.Session - Session await > all process finished
+May-03 15:09:10.584 [Thread-1] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local)
+May-03 15:09:10.584 [main] DEBUG nextflow.Session - Session await > all barriers passed
+May-03 15:09:10.616 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+May-03 15:09:10.632 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
